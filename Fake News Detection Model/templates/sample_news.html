@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample News</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/sample_news">SAMPLE NEWS</a></li>
+            <li><a href="/about">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Sample News</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>News Text</th>
+                    <th>Label</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for sample, label in samples %}
+                <tr>
+                    <td>{{ sample }}</td>
+                    <td>{{ 'Real' if label == 1 else 'Fake' }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Fake News Detector. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>nathanieljusticemensah@gmail.com</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

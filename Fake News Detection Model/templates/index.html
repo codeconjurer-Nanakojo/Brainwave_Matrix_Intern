@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/sample_news">SAMPLE NEWS</a></li>
+            <li><a href="/about">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Fake News Detector</h1>
+        <textarea id="newsText" placeholder="Enter news text here..."></textarea>
+        <button id="predictButton">Predict</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Fake News Detector. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>nathanieljusticemensah@gmail.com</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
