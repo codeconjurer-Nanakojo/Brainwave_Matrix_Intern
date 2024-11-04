@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Fake News Detector App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
         body {
             font-family: Arial, sans-serif;
         }
-        .container {
+        .container2 {
             width: 80%;
             margin: 0 auto;
         }
@@ -24,7 +25,14 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <nav>
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/sample_news">SAMPLE NEWS</a></li>
+            <li><a href="/about" class="active">ABOUT</a></li>
+        </ul>
+    </nav>
+    <div class="container2">
         <h1>About the Fake News Detector App</h1>
 
         <h2>Overview</h2>
@@ -34,10 +42,9 @@
         <ul>
             <li><strong>Real-time Analysis</strong>: Instantly analyze news articles and identify potential false information.</li>
             <li><strong>Machine Learning Algorithms</strong>: Utilizes state-of-the-art ML models for high accuracy in detecting fake news.</li>
-            <li><strong>User Feedback Integration</strong>: Continuously improves through user feedback and real-world data.</li>
-            <li><strong>Comprehensive Reports</strong>: Provides detailed reports on news credibility.</li>
+            <li><strong>User Friendly GUI</strong>: The app's interface is design to give a friendly and clear user experience </li>
         </ul>
-
+        
         <h2>Achievements & Performance</h2>
         <p><strong>Model Performance Metrics</strong>:</p>
         <div class="code-block">
@@ -77,5 +84,13 @@ weighted avg       0.98      0.98      0.98      8981
         <h2>Conclusion</h2>
         <p>Our Fake News Detector app excels in real-time analysis, accuracy, and user engagement. By continually integrating user feedback, we strive to enhance the app's capabilities and help more users discern truth from falsehood.</p>
     </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Fake News Detector. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>EMAIL: nathanieljusticemensah@gmail.com</p>
+        </div>
+    </footer>
 </body>
 </html>

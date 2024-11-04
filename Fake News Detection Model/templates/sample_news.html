@@ -10,18 +10,19 @@
     <nav>
         <ul>
             <li><a href="/">HOME</a></li>
-            <li><a href="/sample_news">SAMPLE NEWS</a></li>
+            <li><a href="/sample_news" class="active">SAMPLE NEWS</a></li>
             <li><a href="/about">ABOUT</a></li>
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container1">
         <h1>Sample News</h1>
         <table>
             <thead>
                 <tr>
                     <th>News Text</th>
                     <th>Label</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -29,11 +30,13 @@
                 <tr>
                     <td>{{ sample }}</td>
                     <td>{{ 'Real' if label == 1 else 'Fake' }}</td>
+                    <td><button class="copy-btn" onclick="copyToClipboard('{{ sample }}')">Copy</button></td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
+    
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 Fake News Detector. All rights reserved.</p>
