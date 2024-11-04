@@ -52,8 +52,15 @@ Performance: Achieved high accuracy in detecting fake news during testing.
 Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Terms of Service
+
+The terms of service will be outlined here soon. For now, please refer to the MIT License for general usage guidelines.
+
 
 Contact
 Nathaniel Justice Kojo Mensah Email: nathanieljusticemensah@gmail.com
