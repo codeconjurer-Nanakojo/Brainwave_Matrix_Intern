@@ -10,15 +10,15 @@ import pickle
 fake_news = pd.read_csv("fake.csv")
 true_news = pd.read_csv("True.csv")
 
-# Assign labels
+# Assigning  labels
 fake_news['label'] = 0
 true_news['label'] = 1
 
-# Create training and testing datasets
+# Creating training and testing datasets
 fake_train, fake_test = train_test_split(fake_news, test_size=0.2, random_state=42)
 true_train, true_test = train_test_split(true_news, test_size=0.2, random_state=42)
 
-# Combine the training and testing sets
+# Combining the training and testing sets
 train_set = pd.concat([fake_train, true_train])
 test_set = pd.concat([fake_test, true_test])
 
